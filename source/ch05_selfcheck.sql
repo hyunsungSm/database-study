@@ -25,6 +25,6 @@ WHERE name LIKE '%ml%' OR name LIKE '%l%';
 -- 5. 10월과 12월에 들어온 주문의 개수를 구하세요(주의: 11월은 포함하지 않습니다).
 SELECT COUNT(created_at)
 FROM orders 
-WHERE MONTH(created_at) < 11 OR MONTH(created_at) > 11;
+WHERE MONTH(created_at) = 10 OR MONTH(created_at) = 12;
 
 
